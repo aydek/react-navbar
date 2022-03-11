@@ -2,4 +2,9 @@
 
 Navbar created with react
 
-https://gfycat.com/memorableinsecureasp
+![](https://github.com/aydek/react-navbar/blob/main/navbar.gif)
+
+
+
+
+
