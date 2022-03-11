@@ -2,7 +2,7 @@
 
 Navbar created with react
 
-![](https://thumbs.gfycat.com/MemorableInsecureAsp-mobile.mp4)
+![](https://github.com/aydek/react-navbar/blob/main/navbar.gif)
 
 
 
