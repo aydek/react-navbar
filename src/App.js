@@ -11,7 +11,6 @@ function App() {
     };
     return (
         <div className="nav_window">
-        
             <div className="nav_body">
                 <div className={`item_body ${navIndex === 0 ? 'active' : ''}`} onClick={setIndex(0)}>
                     <p>Home</p>

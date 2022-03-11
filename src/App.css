@@ -112,7 +112,3 @@ body {
     transform: translateX(calc(128.5px * 4));
 }
 
-/* .item_body > p:hover + svg {
-    transition: 100ms linear;
-    margin-top: -20px;
-} */
