@@ -2,8 +2,7 @@
 
 Navbar created with react
 
- <img src="https://gfycat.com/memorableinsecureasp
-"/>
+![](https://thumbs.gfycat.com/MemorableInsecureAsp-mobile.mp4)
 
 
 
