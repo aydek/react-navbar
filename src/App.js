@@ -1,22 +1,42 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import { mdiAccount, mdiBellAlert, mdiCog, mdiHome, mdiMessage } from '@mdi/js';
+import Icon from '@mdi/react';
+
 import './App.css';
 
-class App extends Component {
-  render() {
+function App() {
+    const [navIndex, setNavIndex] = useState(0);
+    const setIndex = (index) => () => {
+        setNavIndex(index);
+    };
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+        <div className="nav_window">
+        
+            <div className="nav_body">
+                <div className={`item_body ${navIndex === 0 ? 'active' : ''}`} onClick={setIndex(0)}>
+                    <p>Home</p>
+                    <Icon path={mdiHome} size={1} />
+                </div>
+                <div className={`item_body ${navIndex === 1 ? 'active' : ''}`} onClick={setIndex(1)}>
+                    <p>Messages</p>
+                    <Icon path={mdiMessage} size={1} />
+                </div>
+                <div className={`item_body ${navIndex === 2 ? 'active' : ''}`} onClick={setIndex(2)}>
+                    <p>Notifications</p>
+                    <Icon path={mdiBellAlert} size={1} />
+                </div>
+                <div className={`item_body ${navIndex === 3 ? 'active' : ''}`} onClick={setIndex(3)}>
+                    <p>Account</p>
+                    <Icon path={mdiAccount} size={1} />
+                </div>
+                <div className={`item_body ${navIndex === 4 ? 'active' : ''}`} onClick={setIndex(4)}>
+                    <p>Settings</p>
+                    <Icon path={mdiCog} size={1} />
+                </div>
+                <div className="indicator"></div>
+            </div>
         </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
     );
-  }
 }
-//yea
 
 export default App;
